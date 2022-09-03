@@ -19,6 +19,6 @@ metadata:
 kind: Namespace
 apiVersion: v1
 metadata:
-  name: test-ns
+  name: app-config
   labels:
     istio-injection: enabled

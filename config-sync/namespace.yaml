@@ -14,3 +14,11 @@ metadata:
     owner: VK
   annotations:
     configsync.gke.io/cluster-name-selector: qa
+
+---
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: test-ns
+  labels:
+    istio-injection: enabled

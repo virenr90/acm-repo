@@ -17,13 +17,15 @@ spec:
 
 ---
 
-apiVersion: extensions/v1beta1
+apiVersion: v1beta1
 kind: Deployment
+group: extensions
 metadata:
+  name: app1
   namespace: app-config
   labels:
     run: app1
-  name: app1
+
 spec:
   replicas: 1
   template:

@@ -17,7 +17,7 @@ spec:
 
 ---
 
-apiVersion: extensions/v1beta1
+Version: v1beta1
 kind: Deployment
 group: extensions
 metadata:

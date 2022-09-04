@@ -17,7 +17,8 @@ spec:
 
 ---
 
-Version: v1beta1
+source: service_sample.yaml
+apiVersion: v1beta1
 kind: Deployment
 group: extensions
 metadata:

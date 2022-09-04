@@ -1,26 +1,26 @@
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: service-test
+#   namespace: app-config
+#   annotations:
+#     cloud.google.com/neg: '{"exposed_ports": {"80":{"name": "service-test-neg"}}}'
+# spec:
+#   ports:
+#   - port: 80
+#     name: service-test
+#     protocol: TCP
+#     targetPort: 8000
+#   selector:
+#     run: app1
+#   type: ClusterIP
+
+# ---
+
+
 apiVersion: v1
-kind: Service
-metadata:
-  name: service-test
-  namespace: app-config
-  annotations:
-    cloud.google.com/neg: '{"exposed_ports": {"80":{"name": "service-test-neg"}}}'
-spec:
-  ports:
-  - port: 80
-    name: service-test
-    protocol: TCP
-    targetPort: 8000
-  selector:
-    run: app1
-  type: ClusterIP
-
----
-
-source: service_sample.yaml
-apiVersion: v1beta1
 kind: Deployment
-group: extensions
+#group: extensions
 metadata:
   name: app1
   namespace: app-config

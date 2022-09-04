@@ -23,7 +23,7 @@ metadata:
     run: app1
   name: app1
 spec:
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
